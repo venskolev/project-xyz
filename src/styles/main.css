@@ -1,0 +1,117 @@
+body {
+  margin: 0 auto;
+  margin-top: 120px;
+  /* padding-left: 5rem;
+  padding-right: 5rem; */
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  /* Скрива цвета на скрол лентата */
+}
+
+/* Webkit браузъри като Chrome и Safari */
+body::-webkit-scrollbar {
+  width: 12px;
+  /* Размер на скрол лентата (по избор) */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  /* Скрива цвета на скрол лентата */
+}
+
+/* По избор: Стил за хоовър ефект */
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #a0a0a0;
+  /* Цвят на скрол лентата при хоовър (по избор) */
+}
+
+.LeftSidebar,
+.RightSidebar {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  min-width: 150px;
+  max-width: 360px;
+  height: 75vh;
+  flex-basis: 360px;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  background-color: rgb(233, 232, 232);
+  gap: .5rem;
+}
+
+.LeftSidebar::-webkit-scrollbar,
+.RightSidebar::-webkit-scrollbar {
+  width: 12px;
+}
+
+.LeftSidebar::-webkit-scrollbar-thumb,
+.RightSidebar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.LeftSidebar::-webkit-scrollbar-thumb:hover,
+.RightSidebar::-webkit-scrollbar-thumb:hover {
+  background-color: #a0a0a0;
+}
+
+.LeftSidebar {
+  width: 50px;
+  left: 0;
+  margin-left: 1rem;
+  padding: 1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.RightSidebar {
+  width: 50px;
+  right: 0;
+  margin-right: 1rem;
+  padding: 1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Feed {
+  flex-grow: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 1rem;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  background-color: rgba(248, 248, 248, 0.904);
+}
+
+.Feed::-webkit-scrollbar {
+  width: 12px;
+}
+
+.Feed::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.Feed::-webkit-scrollbar-thumb:hover {
+  background-color: #e4e3e3;
+}
+
+.MuiAppBar-root {
+  background-color: rgba(242, 244, 247, 0.959);
+  color: black;
+  position: 'sticky';
+  top: 0;
+}

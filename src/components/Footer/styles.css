@@ -1,0 +1,9 @@
+/* Вашият стил за футера в CSS файл, например styles.css */
+footer {
+  position: absolute;
+  /* bottom: 0; */
+  width: calc(100vw - 2rem);
+  background-color: #dfdfdfd8;
+  padding: .1rem;
+  text-align: center;
+}
